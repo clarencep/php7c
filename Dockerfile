@@ -1,4 +1,4 @@
-FROM clarencep/php7
+FROM clarencep/php7:7.1
 
 RUN DEBIAN_FRONTEND="noninteractive" \
     && apt-get update -y \
