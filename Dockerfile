@@ -9,4 +9,4 @@ RUN apt-get update \
     && mv composer.phar /usr/local/bin/composer \
     && chmod a+x /usr/local/bin/composer
 
-CMD php -v && composer 
+CMD php -v && composer -V
