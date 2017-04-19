@@ -13,9 +13,9 @@ before_script:
   - python --version
   - docker version
   - docker ps -a
-  - docker build -t clarencep/php7 .
+  - docker build -t clarencep/php7c .
   - docker images
   - docker ps -a
 
 script:
-  - docker run -it --rm clarencep/php7 php -v
+  - docker run -it --rm clarencep/php7c sh -c 'php -v && composer'
